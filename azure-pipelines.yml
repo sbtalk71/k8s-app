@@ -21,6 +21,11 @@ stages:
      vmImage: 'ubuntu-latest'
       
     steps:
+    - task: JavaToolInstaller@1
+      inputs:
+        versionSpec: '17'
+        jdkArchitectureOption: 'x64'
+        jdkSourceOption: 'PreInstalled'
     - task: Maven@4
       inputs:
         azureSubscription: 'Pay-As-You-Go(1a4fd15f-e4d8-46a6-a2b9-43b0b207b218)'

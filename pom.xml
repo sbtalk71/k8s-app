@@ -55,12 +55,14 @@
 						<id>default</id>
 						<goals>
 							<goal>build</goal>
+			-->
 							 <!-- <goal>push</goal> -->
-						</goals>
+			<!--			</goals>
 					</execution>
 				</executions>
 				<configuration>
-					<!-- todo -->
+			-->		<!-- todo -->
+					<!--
 					<repository>sbtalk71/${project.name}</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>

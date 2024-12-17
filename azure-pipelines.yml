@@ -51,5 +51,5 @@ stages:
         azureResourceGroup: 'my-aks-rg'
         kubernetesCluster: 'myaks01'
         useClusterAdmin: true
-        namespace: 'Default'
+        namespace: 'default'
         manifests: '$(Build.SourcesDirectory)/deployment.yaml'

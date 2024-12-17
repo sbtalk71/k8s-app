@@ -24,7 +24,7 @@ spec:
         app: greet-service
     spec:
       containers:
-      - image: sbtalk71/greet-service:1
+      - image: sbtalk71cr.azurecr.io/testapp:$(Build.BuildId)
         imagePullPolicy: IfNotPresent
         name: greet-service
        

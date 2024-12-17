@@ -43,3 +43,13 @@ stages:
         repository: 'testapp'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+    - task: KubernetesManifest@1
+      inputs:
+        action: 'deploy'
+        connectionType: 'azureResourceManager'
+        azureSubscriptionConnection: 'Pay-As-You-Go(1a4fd15f-e4d8-46a6-a2b9-43b0b207b218)'
+        azureResourceGroup: 'my-aks-rg'
+        kubernetesCluster: 'myaks01'
+        useClusterAdmin: true
+        namespace: 'Default'
+        manifests: '$(Build.SourcesDirectory)/deployment.yml'

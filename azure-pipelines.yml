@@ -52,4 +52,4 @@ stages:
         kubernetesCluster: 'myaks01'
         useClusterAdmin: true
         namespace: 'Default'
-        manifests: '$(Build.SourcesDirectory)/deployment.yml'
+        manifests: '$(Build.SourcesDirectory)/deployment.yaml'

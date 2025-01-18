@@ -39,7 +39,7 @@ stages:
 
     - task: Docker@2
       inputs:
-        containerRegistry: 'acr-conn'
+        containerRegistry: 'sbtalk71cr-conn'
         repository: 'testapp'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'

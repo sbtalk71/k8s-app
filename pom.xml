@@ -31,7 +31,6 @@
 	</dependencies>
 
 	<build>
-	<finalName>greet-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
